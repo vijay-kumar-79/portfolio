@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <!-- Desktop nav -->
+    <nav id="desktop-nav">
+      <div class="logo">Vijay Kumar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hamburger nav -->
+    <nav id="hamburger-nav">
+      <div class="logo">Vijay Kumar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/avatar.png" alt="Vijay Kumar profile picture" class="avatar" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vijay Kumar</h1>
+        <p><span class="role section__text__p2"></span></p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vijay-kumar-guntamukkala-9a2a2028b'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/vijay-kumar-79'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+      <div class="section-heading">
+        <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      </div>
+      
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/vijay-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Web Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech At IITG<br />Currently a Sophomere</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+             Hi, I'm Vijay Kumar, a Web Developer, with over 1.5 years of experience in Web Development. 
+             I specialize in HTML, CSS, JavaScript, React JS. I also tried Web Design as UI/UX Designer. 
+             Feel free to explore my portfolio and reach out if you’d like to collaborate or learn more about my work.
+              I’m always excited to connect with like-minded professionals and explore new opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="section-heading">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+      </div>
+      
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Design</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UI/UX Design</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web Design</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="know-me section-heading">
+          <p class="section__text__p1">Browse My Recent</p>
+          <h2 class="title">Projects</h2>
+      </div>
+
+      <div class="projects-container">
+          <div class="details-container project-1 project-cards">
+              <img src="Projects/project-1.png" class="project-img" alt="">
+              <div class="project-details right">
+                  <h2>Simon Game</h2>
+                  <p>A Crazy game based on the game the simons. It is a website which tested my
+                      whole knowledge on JavaScript
+                  </p>
+                  <button class="try-btn" onclick="location.href='https://github.com/vijay-kumar-79/simons-game.git'">Github</button>
+                  <button class="try-btn" onclick="location.href='https://vijay-kumar-79.github.io/simons-game'">Live Demo</button>
+              </div>
+          </div>
+          <div class="details-container project-2 project-cards">
+              <img src="Projects/project-2.png" class="project-img" alt="">
+              <div class="project-details left">
+                  <h2>Roll a Dice</h2>
+                  <p>This website is a simple game in which by refreshing the page you get a 
+                      winner amoung the two players shown. It is based on java script variables and a randomness.
+                  </p>
+                  <button class="try-btn" onclick="location.href='https://github.com/vijay-kumar-79/dice-game'">Github</button>
+                  <button class="try-btn" onclick="location.href='https://vijay-kumar-79.github.io/dice-game'">Live Demo</button>
+              </div>
+          </div>
+          <div class="details-container project-3 project-cards">
+              <img src="Projects/project-3.png" class="project-img" alt="">
+              <div class="project-details right">
+                  <h2>Drum Kit</h2>
+                  <p>Drum kit is a website built with a highly used DOM. I used all kinds of event listeners
+                      so that website can be played using both keys and mouse.
+                  </p>
+                  <button class="try-btn" onclick="location.href='https://github.com/vijay-kumar-79/drum-kit'">Github</button>
+                  <button class="try-btn" onclick="location.href='https://vijay-kumar-79.github.io/drum-kit'">Live Demo</button>
+              </div>
+          </div>
+          <div class="details-container project-4 project-cards">
+              <img src="Projects/project-4.png" class="project-img" alt="">
+              <div class="project-details left">
+                  <h2>Image Gallery</h2>
+                  <p>Image gallery is built only using HTML and CSS . It has
+                      beautiful hover effects, including changing from gray scale to color and alson scale.
+                  </p>
+                  <button class="try-btn" onclick="location.href='https://github.com/vijay-kumar-79/Image-gallery.git'">Github</button>
+                  <button class="try-btn" onclick="location.href='https://vijay-kumar-79.github.io/Image-gallery'">Live Demo</button>
+              </div>
+          </div>
+      </div>
+      <img src="assets/arrow.png" class="icon arrow" onclick="location.href='./#contact'">           
+     </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="section-heading">
+        <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:gvijay2403@gmail.com">gvijay2403@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/vijay-kumar-guntamukkala-9a2a2028b">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Foooter Section -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Vijay Kumar. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+      var typeData = new Typed(".role", {
+        strings: [
+          "Coder",
+          "Frontend Developer",
+          "Web Developer",
+          "UI-UX Designer",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+      });
+    </script>
+  </body>
+</html>
