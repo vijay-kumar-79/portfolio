@@ -103,7 +103,7 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
-  
+  z-index: 10;
 }
 
 .menu-links a {
@@ -196,7 +196,9 @@ section {
   margin-bottom: 1rem;
 }
 
-
+.avatar{
+  z-index: -2;
+}
 
 .title {
   font-size: 3rem;
