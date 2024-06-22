@@ -11,8 +11,8 @@ function init(){
   const sr = ScrollReveal({
     reset: true,
     distance: '60px',
-    duration: 1300,
-    delay: 400,
+    duration: 1200,
+    delay: 100,
     origin: 'top'
   });
 
@@ -21,10 +21,10 @@ function init(){
     sr.reveal('.logo',{origin: 'left'});
     sr.reveal('.hamburger-menu',{origin: 'right'});
     sr.reveal('.section__text',{origin: 'bottom'});
-    sr.reveal('.avatar',{delay: 600,origin: 'top'});
+    sr.reveal('.avatar',{delay: 400,origin: 'top'});
     sr.reveal('.section-heading');
     // sr.reveal('#about .section-heading',{origin:'bottom'});
-    sr.reveal('.about-pic',{delay: 600});
+    sr.reveal('.about-pic',{delay: 400});
     sr.reveal('#about .details-container',{origin: 'bottom'});
     sr.reveal('.details-container');
     sr.reveal('.text-container',{origin: 'bottom'});
@@ -32,25 +32,25 @@ function init(){
     sr.reveal('#projects .know-me',{origin: 'left'});
     sr.reveal('.contact-info-upper-container',{origin: 'bottom'});
     sr.reveal('footer');
-    sr.reveal('.arrow',{origin: 'right',delay: 600});
-    sr.reveal('.nav-links li',{delay: 500,interval: 300});
-    sr.reveal('.project-details',{delay: 600,origin:'bottom'});
+    sr.reveal('.arrow',{origin: 'right',delay: 500});
+    sr.reveal('.nav-links li',{delay: 300,interval: 200});
+    sr.reveal('.project-details',{delay: 300,origin:'bottom'});
   }
   else{
     sr.reveal('.logo',{origin:'left'});
     sr.reveal('.section__text',{origin: 'right'});
-    sr.reveal('.avatar',{delay: 600,origin: 'left'});
+    sr.reveal('.avatar',{delay: 400,origin: 'left'});
     sr.reveal('.section-heading');
-    sr.reveal('.about-pic',{delay: 600,origin: 'left'});
+    sr.reveal('.about-pic',{delay: 400,origin: 'left'});
     sr.reveal('.details-container');
     sr.reveal('.text-container',{origin: 'bottom'});
     sr.reveal('#experience .details-container',{origin: 'bottom'});
     sr.reveal('#projects .know-me',{origin: 'left'});
     sr.reveal('.contact-info-upper-container',{origin: 'bottom'});
     sr.reveal('footer');
-    sr.reveal('.arrow',{origin: 'right',delay: 600});
-    sr.reveal('.nav-links li',{delay: 500,interval: 300,origin: 'right'});
-    sr.reveal('.project-details',{delay: 600,origin:'bottom'});
+    sr.reveal('.arrow',{origin: 'right',delay: 500});
+    sr.reveal('.nav-links li',{delay: 300,interval: 200,origin: 'right'});
+    sr.reveal('.project-details',{delay: 300,origin:'bottom'});
   }
 }
 
