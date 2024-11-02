@@ -191,12 +191,12 @@ section {
   text-align: center;
 }
 
-.section__text__p2{
+.section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
-.avatar{
+.avatar {
   z-index: -2;
 }
 
@@ -362,18 +362,19 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-#projects{
+#projects {
   position: relative;
   height: fit-content;
 }
 
-#projects .know-me,#experience .know-me{
+#projects .know-me,
+#experience .know-me {
   margin-bottom: 4rem;
   /* text-align: center; */
 }
 
 
-#projects .details-container{
+#projects .details-container {
   width: 90%;
   padding: 0;
   border-radius: 0;
@@ -382,22 +383,23 @@ article .icon {
   position: relative;
 }
 
-.project-2,.project-4{
+.project-2,
+.project-4 {
   margin-right: 0;
   margin-left: auto;
 }
 
-.project-img{
+.project-img {
   width: 100%;
   transition: all 300ms ease;
 }
 
-.project-img:hover{
+.project-img:hover {
   filter: brightness(60%);
   box-shadow: 0px 0px 15px #1f1f1f;
 }
 
-.project-details{
+.project-details {
   width: 40%;
   position: absolute;
   top: 40%;
@@ -406,30 +408,30 @@ article .icon {
   /* scale: 0.5; */
 }
 
-.project-details h2{
+.project-details h2 {
   font-size: 3rem;
   color: white;
   margin-bottom: 1rem;
-  
+
 }
 
-.project-details p{
+.project-details p {
   font-size: 1rem;
   color: white;
   margin-bottom: 1rem;
 }
 
-.right{
+.right {
   left: 10%;
 }
 
-.left{
+.left {
   right: 10%;
 }
 
-.details-container:hover .project-details{
+.details-container:hover .project-details {
   scale: 1.1;
-  
+
 }
 
 .project-cards::after {
@@ -460,11 +462,11 @@ article .icon {
   transition: all 0.4s;
 }
 
-.project-cards:hover::before{
+.project-cards:hover::before {
   transform: scaleX(1);
 }
 
-.try-btn{
+.try-btn {
   cursor: pointer;
   outline: 0;
   display: inline-block;
@@ -476,7 +478,7 @@ article .icon {
   padding: 6px 12px;
   font-size: 1rem;
   border-radius: .25rem;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   color: white;
   border-color: white;
 }
@@ -486,6 +488,7 @@ article .icon {
   background-color: #0d6efd;
   border-color: #0d6efd;
 }
+
 /* CONTACT */
 
 #contact {
@@ -538,15 +541,15 @@ footer p {
 }
 
 /* Scroll bar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: .6rem;
   background-color: hsl(0, 0%, 81%);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: hsl(0, 0%, 36%);
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background-color: hsl(0, 0%, 15%);
 }
