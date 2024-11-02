@@ -48,5 +48,3 @@ If you'd like to run the portfolio locally, follow these steps:
    ```bash
    cd portfolio
 3. Open The Html file
-   ```bash
-   git clone https://github.com/yourusername/portfolio.git
